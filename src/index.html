@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ThucHanhCNWeb</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+  <!-- Css Styles --> <base href="">
+  <link rel="icon" type="image/png" href="assets/img/hero/logo.png">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/elegant-icons.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <style type="text/css">
+      
+a.lendau { opacity:0.8; display: none;}
+a.lendau:hover{
+background-color: #7fad39;
+color: #fff;
+border: 1px solid #7fad39;
+opacity:1;
+}
+a.lendau i{ font-size: 20px;}
+a.lendau {
+border-radius: 5px;
+background-color: #A21717;
+padding: 10px 20px;
+white-space: nowrap; color: #fff;
+position: fixed;
+bottom: 75px;
+right: 0px;
+height: 44px;
+}
+  </style>
+
+</head>
+<body>
+  <app-root></app-root>
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.nice-select.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+      //lên đầu trang
+      $(document).ready(function(){
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('.lendau').fadeIn();
+      } else {
+          $('.lendau').fadeOut();
+      }
+  });
+  $('.lendau').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+  });
+});
+  </script>
+</body>
+</html>
